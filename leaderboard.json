@@ -1,10 +1,10 @@
 [
   {
     "name": "Overall Performance",
-    "query": "SELECT participants.purple_agent AS id, ROUND(r.average_score * 100, 1) AS \"Score (%)\", ROUND(r.accuracy * 100, 1) AS \"Accuracy (%)\", r.num_evaluated AS \"Tasks\", r.num_successful AS \"Passed\" FROM (SELECT participants, results[1] AS r FROM results) ORDER BY r.average_score DESC"
+    "query": "SELECT participants.purple_agent AS id, ROUND(r.average_alpha_score, 0) AS \"Alpha Score\", r.num_tasks AS \"Tasks\", r.num_successful AS \"Passed\" FROM (SELECT participants, results[1] AS r FROM results) ORDER BY r.average_alpha_score DESC"
   },
   {
-    "name": "By Dataset",
-    "query": "SELECT participants.purple_agent AS id, ROUND(r.by_dataset.bizfinbench.mean_score * 100, 1) AS \"BizFinBench (%)\", ROUND(r.by_dataset.public_csv.mean_score * 100, 1) AS \"CSV (%)\", ROUND(r.by_dataset.options.mean_score * 100, 1) AS \"Options (%)\" FROM (SELECT participants, results[1] AS r FROM results) ORDER BY r.average_score DESC"
+    "name": "Detailed Results",
+    "query": "SELECT participants.purple_agent AS id, r.ticker AS \"Ticker\", r.version AS \"Version\", ROUND(r.average_alpha_score, 0) AS \"Alpha Score\" FROM (SELECT participants, results[1] AS r FROM results) ORDER BY r.average_alpha_score DESC"
   }
 ]
