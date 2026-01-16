@@ -20,12 +20,13 @@ conduct_debate = false
 timeout_seconds = 300
 
 # Datasets to evaluate on
-datasets = ["bizfinbench", "public_csv", "options"]
+datasets = ["bizfinbench", "public_csv", "options", "synthetic"]
 
 # Sampling strategy: "stratified", "random", "sequential"
 sampling_strategy = "stratified"
 
 # Per-dataset limits (for balanced evaluation)
-bizfinbench_limit = 4
-public_csv_limit = 3
+bizfinbench_limit = 3
+public_csv_limit = 2
 options_limit = 3
+synthetic_limit = 2
