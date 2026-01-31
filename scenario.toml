@@ -3,15 +3,19 @@
 
 [green_agent]
 # CIO-Agent Green Agent - FAB++ Evaluator
-agentbeats_id = "GREEN_AGENT_ID"
+agentbeats_id = "019bc421-99d0-7ee3-ae27-658145eff474"
 env = { OPENAI_API_KEY = "${OPENAI_API_KEY}", EVAL_CONFIG = "config/eval_all.yaml", EVAL_DATA_REPO = "${EVAL_DATA_REPO}", EVAL_DATA_PAT = "${EVAL_DATA_PAT}" }
 
 [[participants]]
 # Purple Agent (Finance Analyst) to be evaluated
 # Submitters: Fill in your agent's agentbeats_id
-agentbeats_id = "PURPLE_AGENT_ID"
+agentbeats_id = "019c1634-be7d-7200-9102-dc57104f32db"
 name = "purple_agent"
-env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
+env = { 
+    OPENAI_API_KEY = "${OPENAI_API_KEY}",
+    OPENAI_API_BASE = "https://openrouter.ai/api/v1",
+    LLM_MODEL = "anthropic/claude-3.5-sonnet"
+}
 
 [config]
 # Assessment configuration
