@@ -25,8 +25,8 @@ num_tasks = 18
 conduct_debate = false
 timeout_seconds = 300
 
-# Datasets to evaluate on (crypto excluded - requires hidden data secrets)
-datasets = ["bizfinbench", "public_csv", "options", "synthetic", "gdpval"]
+# Datasets to evaluate on (including crypto trading and GDPVal benchmarks)
+datasets = ["bizfinbench", "public_csv", "options", "synthetic", "crypto", "gdpval"]
 
 # Sampling strategy: "stratified", "random", "sequential"
 sampling_strategy = "stratified"
