@@ -1,0 +1,663 @@
+{
+  "participants": {
+    "purple_agent": "019c16a8-a0b2-77c3-aae3-8e0c23ca5de1"
+  },
+  "results": [
+    {
+      "schema_version": "2.0",
+      "benchmark": "FAB++ Finance Agent Benchmark",
+      "version": "2.0.0",
+      "overall_score": {
+        "score": 45.48,
+        "max_score": 100.0
+      },
+      "section_scores": {
+        "knowledge_retrieval": {
+          "score": 0.0,
+          "weight": 0.2,
+          "weighted_contribution": 0.0,
+          "datasets": [
+            "public_csv",
+            "bizfinbench"
+          ],
+          "task_count": 8,
+          "accuracy": 0.0,
+          "sub_scores": {}
+        },
+        "options_trading": {
+          "score": 32.5,
+          "weight": 0.2,
+          "weighted_contribution": 6.5,
+          "datasets": [
+            "options"
+          ],
+          "task_count": 2,
+          "accuracy": 0.0,
+          "sub_scores": {
+            "risk_management": 30.0,
+            "pnl_accuracy": 60.0,
+            "strategy_quality": 40.0,
+            "greeks_accuracy": 0.0
+          }
+        },
+        "analytical_reasoning": {
+          "score": 100.0,
+          "weight": 0.2,
+          "weighted_contribution": 20.0,
+          "datasets": [
+            "synthetic"
+          ],
+          "task_count": 2,
+          "accuracy": 1.0,
+          "sub_scores": {}
+        },
+        "crypto_trading": {
+          "score": 44.92,
+          "weight": 0.2,
+          "weighted_contribution": 8.98,
+          "datasets": [
+            "crypto"
+          ],
+          "task_count": 2,
+          "accuracy": 0.0,
+          "sub_scores": {
+            "meta": 45.07,
+            "adversarial": 41.91,
+            "noisy": 41.67,
+            "baseline": 48.07
+          }
+        },
+        "professional_tasks": {
+          "score": 50.0,
+          "weight": 0.2,
+          "weighted_contribution": 10.0,
+          "datasets": [
+            "gdpval"
+          ],
+          "task_count": 4,
+          "accuracy": 0.0,
+          "sub_scores": {
+            "completion": 0.0,
+            "professionalism": 0.0,
+            "format": 0.0,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "evaluation_metadata": {
+        "purple_agent": "http://purple_agent:9009/",
+        "num_tasks": 18,
+        "num_successful": 10,
+        "conduct_debate": false
+      },
+      "detailed_results": [
+        {
+          "task_id": "bizfinbench_event_logic_reasoning_en_807",
+          "dataset_type": "bizfinbench",
+          "section": "knowledge_retrieval",
+          "raw_score": 0.0,
+          "normalized_score": 0.0,
+          "is_correct": false,
+          "feedback": "Predicted: '402', Expected: '1,4,2,3'"
+        },
+        {
+          "task_id": "bizfinbench_financial_quantitative_computation_en_844",
+          "dataset_type": "bizfinbench",
+          "section": "knowledge_retrieval",
+          "raw_score": 0.0,
+          "normalized_score": 0.0,
+          "is_correct": false,
+          "feedback": "Predicted: 402.0, Expected: 87.1554, Tolerance: 0.01"
+        },
+        {
+          "task_id": "csv_finance_3",
+          "dataset_type": "public_csv",
+          "section": "knowledge_retrieval",
+          "raw_score": 0.0,
+          "normalized_score": 0.0,
+          "is_correct": false,
+          "feedback": "Correctness: 0/4, Contradictions: 0"
+        },
+        {
+          "task_id": "strategy_002",
+          "dataset_type": "options",
+          "section": "options_trading",
+          "raw_score": 32.5,
+          "normalized_score": 32.5,
+          "is_correct": false,
+          "feedback": "Multiple P&L calculations present. Missing Greeks analysis."
+        },
+        {
+          "task_id": "SYN_LOGIC_0011",
+          "dataset_type": "synthetic",
+          "section": "analytical_reasoning",
+          "raw_score": 1.0,
+          "normalized_score": 100.0,
+          "is_correct": true,
+          "feedback": "Extracted: Unknown, Expected: Unknown"
+        },
+        {
+          "task_id": "scenario_0094498853a90db4",
+          "dataset_type": "crypto",
+          "section": "crypto_trading",
+          "raw_score": 48.14,
+          "normalized_score": 48.14,
+          "is_correct": false,
+          "feedback": "Final score 48.14 (grade F)"
+        },
+        {
+          "task_id": "ee09d943-5a11-430a-b7a2-971b4e9b01b5",
+          "dataset_type": "gdpval",
+          "section": "professional_tasks",
+          "raw_score": 0.5,
+          "normalized_score": 50.0,
+          "is_correct": false,
+          "feedback": "Heuristic evaluation (LLM unavailable)"
+        },
+        {
+          "task_id": "27e8912c-8bd5-44ba-ad87-64066ea05264",
+          "dataset_type": "gdpval",
+          "section": "professional_tasks",
+          "raw_score": 0.5,
+          "normalized_score": 50.0,
+          "is_correct": false,
+          "feedback": "Heuristic evaluation (LLM unavailable)"
+        },
+        {
+          "task_id": "bizfinbench_event_logic_reasoning_en_1468",
+          "dataset_type": "bizfinbench",
+          "section": "knowledge_retrieval",
+          "raw_score": 0.0,
+          "normalized_score": 0.0,
+          "is_correct": false,
+          "feedback": "Predicted: '402', Expected: '6,5,1,3,2,4'"
+        },
+        {
+          "task_id": "bizfinbench_financial_quantitative_computation_en_861",
+          "dataset_type": "bizfinbench",
+          "section": "knowledge_retrieval",
+          "raw_score": 0.0,
+          "normalized_score": 0.0,
+          "is_correct": false,
+          "feedback": "Predicted: 402.0, Expected: 10.0586, Tolerance: 0.01"
+        },
+        {
+          "task_id": "csv_finance_1",
+          "dataset_type": "public_csv",
+          "section": "knowledge_retrieval",
+          "raw_score": 0.0,
+          "normalized_score": 0.0,
+          "is_correct": false,
+          "feedback": "Correctness: 0/9, Contradictions: 0"
+        },
+        {
+          "task_id": "greeks_002",
+          "dataset_type": "options",
+          "section": "options_trading",
+          "raw_score": 32.5,
+          "normalized_score": 32.5,
+          "is_correct": false,
+          "feedback": "Multiple P&L calculations present. Missing Greeks analysis."
+        },
+        {
+          "task_id": "SYN_QUAL_0002",
+          "dataset_type": "synthetic",
+          "section": "analytical_reasoning",
+          "raw_score": 1.0,
+          "normalized_score": 100.0,
+          "is_correct": true,
+          "feedback": "Extracted: Unknown, Expected: Unknown"
+        },
+        {
+          "task_id": "scenario_0850c8d782597a5c",
+          "dataset_type": "crypto",
+          "section": "crypto_trading",
+          "raw_score": 41.7,
+          "normalized_score": 41.7,
+          "is_correct": false,
+          "feedback": "Final score 41.70 (grade F)"
+        },
+        {
+          "task_id": "43dc9778-450b-4b46-b77e-b6d82b202035",
+          "dataset_type": "gdpval",
+          "section": "professional_tasks",
+          "raw_score": 0.5,
+          "normalized_score": 50.0,
+          "is_correct": false,
+          "feedback": "Heuristic evaluation (LLM unavailable)"
+        },
+        {
+          "task_id": "17111c03-aac7-45c2-857d-c06d8223d6ad",
+          "dataset_type": "gdpval",
+          "section": "professional_tasks",
+          "raw_score": 0.5,
+          "normalized_score": 50.0,
+          "is_correct": false,
+          "feedback": "Heuristic evaluation (LLM unavailable)"
+        },
+        {
+          "task_id": "bizfinbench_event_logic_reasoning_en_478",
+          "dataset_type": "bizfinbench",
+          "section": "knowledge_retrieval",
+          "raw_score": 0.0,
+          "normalized_score": 0.0,
+          "is_correct": false,
+          "feedback": "Predicted: '402', Expected: '1,2,3,4'"
+        },
+        {
+          "task_id": "bizfinbench_financial_quantitative_computation_en_560",
+          "dataset_type": "bizfinbench",
+          "section": "knowledge_retrieval",
+          "raw_score": 0.0,
+          "normalized_score": 0.0,
+          "is_correct": false,
+          "feedback": "Predicted: 402.0, Expected: -8.6697, Tolerance: 0.01"
+        }
+      ],
+      "config_summary": {
+        "total": 30,
+        "by_dataset": {
+          "bizfinbench": 8,
+          "public_csv": 4,
+          "options": 4,
+          "synthetic": 4,
+          "crypto": 2,
+          "gdpval": 8
+        },
+        "by_task_type": {
+          "event_logic_reasoning": 4,
+          "financial_quantitative_computation": 4,
+          "Accountants and Auditors": 4,
+          "Administrative Services Managers": 4
+        },
+        "by_category": {
+          "Complex Retrieval": 1,
+          "Strategy Construction": 1,
+          "Financial Logic": 2,
+          "Professional, Scientific, and Technical Services": 4,
+          "Government": 4,
+          "Trends": 1,
+          "Greeks Analysis": 2,
+          "Qualitative Retrieval": 1,
+          "Beat or Miss": 1,
+          "Market Analysis": 1,
+          "P&L Attribution": 1,
+          "Quantitative Retrieval": 1
+        }
+      },
+      "results": [
+        {
+          "example_id": "bizfinbench_event_logic_reasoning_en_807",
+          "dataset_type": "bizfinbench",
+          "task_type": "event_logic_reasoning",
+          "language": "en",
+          "question": "\n### Role-playing\nYou are an experienced financial time attribution and root cause analysis expert. Please follow the 'Task Requirements' to summarize and organize the causes and effects of the 'Speci...",
+          "expected": "1,4,2,3",
+          "predicted": "Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 1240. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 1240. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}",
+          "score": 0.0,
+          "is_correct": false,
+          "feedback": "Predicted: '402', Expected: '1,4,2,3'",
+          "llm_used": false,
+          "llm_failure": "llm_call_failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-or-v1*************************************************************7bd0. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+        },
+        {
+          "example_id": "bizfinbench_financial_quantitative_computation_en_844",
+          "dataset_type": "bizfinbench",
+          "task_type": "financial_quantitative_computation",
+          "language": "en",
+          "question": "You are an expert in data calculation. Please answer the <User Question> based on the provided <Formula List> and <Related Data>, and give your reasons. You need to answer in the specified format.\n###...",
+          "expected": "87.1554%",
+          "predicted": "Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 1240. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 1240. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}",
+          "score": 0.0,
+          "is_correct": false,
+          "feedback": "Predicted: 402.0, Expected: 87.1554, Tolerance: 0.01",
+          "llm_used": false,
+          "llm_failure": "llm_call_failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-or-v1*************************************************************7bd0. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+        },
+        {
+          "example_id": "csv_finance_3",
+          "dataset_type": "public_csv",
+          "category": "Complex Retrieval",
+          "question": "How large was the range (in % terms) for AMD's revenue guidance for Q2 2024, Q3 2024, Q4 2024, and Q1 2025?  Format answer as: \"Q[X] [YEAR]: $[X.X] billion (low) to $[X.X] billion (high), [X.X]% of mi...",
+          "expected": "Average size of AMD's guidance range\nQ1 2025: $6.8 billion to $7.4 billion, 8.5% of midpoint\nQ4 2024...",
+          "predicted": "Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 1240. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 1240. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}",
+          "score": 0.0,
+          "is_correct": false,
+          "correct_count": 0,
+          "total_count": 4,
+          "feedback": "Correctness: 0/4, Contradictions: 0",
+          "llm_used": false,
+          "llm_failure": "llm_call_failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-or-v1*************************************************************7bd0. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+        },
+        {
+          "example_id": "strategy_002",
+          "dataset_type": "options",
+          "category": "Strategy Construction",
+          "question": "AMZN reports earnings in 5 days and is trading at $180. You expect a big move but are unsure of direction. Historical post-earnings moves average 8%. Design an options strategy to profit from this exp...",
+          "expected": "strategy: Long Straddle or Long Strangle; rationale: Profit from large move in either direction; bre...",
+          "predicted": "Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 1240. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 1240. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}",
+          "score": 32.5,
+          "is_correct": false,
+          "pnl_accuracy": 60.0,
+          "greeks_accuracy": 0.0,
+          "strategy_quality": 40.0,
+          "risk_management": 30.0,
+          "feedback": "Multiple P&L calculations present. Missing Greeks analysis.",
+          "llm_used": false,
+          "sub_scores": {
+            "pnl_accuracy": 60.0,
+            "greeks_accuracy": 0.0,
+            "strategy_quality": 40.0,
+            "risk_management": 30.0
+          }
+        },
+        {
+          "example_id": "SYN_LOGIC_0011",
+          "dataset_type": "synthetic",
+          "category": "Financial Logic",
+          "question": "Company ABC has EBIT of $10 million, depreciation of $2 million, capital expenditures of $3 million, and working capital increase of $1 million. The tax rate is 25%. What is the Free Cash Flow to Firm...",
+          "expected": "Unknown",
+          "predicted": "Unknown",
+          "predicted_full": "Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 1240. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 1240. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}",
+          "score": 1.0,
+          "is_correct": true,
+          "feedback": "Extracted: Unknown, Expected: Unknown",
+          "llm_used": false,
+          "sub_scores": {}
+        },
+        {
+          "example_id": "scenario_0094498853a90db4",
+          "dataset_type": "crypto",
+          "scenario_id": "scenario_0094498853a90db4",
+          "scenario_name": "scenario_1",
+          "score": 48.14,
+          "baseline_score": 51.44935355832132,
+          "noisy_score": 44.28916515803392,
+          "adversarial_score": 45.619442306038295,
+          "meta_score": 45.26579015689893,
+          "grade": "F",
+          "random_seed": 2454587458,
+          "metrics": {
+            "baseline": {
+              "total_return": 8.37615708271187e-05,
+              "max_drawdown": 6.467835670355272e-05,
+              "sharpe": 0.11593598958014045,
+              "win_rate": 1.0
+            },
+            "noisy": {
+              "total_return": -9.118848388134211e-05,
+              "max_drawdown": 0.00041247584307518864,
+              "sharpe": -0.05569446836614375,
+              "win_rate": 0.5
+            },
+            "adversarial": {
+              "total_return": 0.0001722070523595903,
+              "max_drawdown": 0.000418833367413301,
+              "sharpe": 0.050216170460135864,
+              "win_rate": 0.5
+            },
+            "meta": {
+              "score": 45.26579015689893,
+              "average": 45.26579015689893,
+              "dispersion": 0.0,
+              "details": [
+                {
+                  "transform": "identity",
+                  "score": 45.26579015689893,
+                  "metrics": {
+                    "total_return": 7.981574877248932e-05,
+                    "max_drawdown": 0.0005373765463662396,
+                    "sharpe": 0.022393284765648763,
+                    "win_rate": 0.5
+                  },
+                  "trade_count": 2,
+                  "decision_errors": 0
+                }
+              ]
+            }
+          },
+          "events": [],
+          "llm_used": false,
+          "sub_scores": {
+            "baseline": 51.44935355832132,
+            "noisy": 44.28916515803392,
+            "adversarial": 45.619442306038295,
+            "meta": 45.26579015689893
+          },
+          "is_correct": false,
+          "feedback": "Final score 48.14 (grade F)"
+        },
+        {
+          "example_id": "ee09d943-5a11-430a-b7a2-971b4e9b01b5",
+          "dataset_type": "gdpval",
+          "occupation": "Accountants and Auditors",
+          "sector": "Professional, Scientific, and Technical Services",
+          "question": "As our Senior Staff Accountant in Financial Reporting & Assembly, you\u2019ve been a critical part of the Aurisic team and you\u2019ve spent the last few years in this role focusing on ensuring the accuracy and...",
+          "predicted": "Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}",
+          "score": 0.5,
+          "is_correct": false,
+          "feedback": "Heuristic evaluation (LLM unavailable)",
+          "has_reference_files": true,
+          "llm_used": false,
+          "sub_scores": {}
+        },
+        {
+          "example_id": "27e8912c-8bd5-44ba-ad87-64066ea05264",
+          "dataset_type": "gdpval",
+          "occupation": "Administrative Services Managers",
+          "sector": "Government",
+          "question": "You are the administrative services manager responsible for facilities within your division in government. Following the recent return to office mandate, human resources (HR) has noted an increase in ...",
+          "predicted": "Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}",
+          "score": 0.5,
+          "is_correct": false,
+          "feedback": "Heuristic evaluation (LLM unavailable)",
+          "has_reference_files": false,
+          "llm_used": false,
+          "sub_scores": {}
+        },
+        {
+          "example_id": "bizfinbench_event_logic_reasoning_en_1468",
+          "dataset_type": "bizfinbench",
+          "task_type": "event_logic_reasoning",
+          "language": "en",
+          "question": "\n### Role-playing\nYou are an experienced financial time attribution and root cause analysis expert. Please follow the 'Task Requirements' to summarize and organize the causes and effects of the 'Speci...",
+          "expected": "6,5,1,3,2,4",
+          "predicted": "Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}",
+          "score": 0.0,
+          "is_correct": false,
+          "feedback": "Predicted: '402', Expected: '6,5,1,3,2,4'",
+          "llm_used": false,
+          "llm_failure": "llm_call_failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-or-v1*************************************************************7bd0. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+        },
+        {
+          "example_id": "bizfinbench_financial_quantitative_computation_en_861",
+          "dataset_type": "bizfinbench",
+          "task_type": "financial_quantitative_computation",
+          "language": "en",
+          "question": "You are an expert in data calculation. Please answer the <User Question> based on the provided <Formula List> and <Related Data>, and give your reasons. You need to answer in the specified format.\n###...",
+          "expected": "10.0586%",
+          "predicted": "Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}",
+          "score": 0.0,
+          "is_correct": false,
+          "feedback": "Predicted: 402.0, Expected: 10.0586, Tolerance: 0.01",
+          "llm_used": false,
+          "llm_failure": "llm_call_failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-or-v1*************************************************************7bd0. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+        },
+        {
+          "example_id": "csv_finance_1",
+          "dataset_type": "public_csv",
+          "category": "Trends",
+          "question": "How has Netflix's (NASDAQ: NFLX) Average Revenue Per Paying User Changed from 2019 to 2024?",
+          "expected": "2019: 10.82\n2020: 10.91\n2021: 11.67\n2022: 11.76\n2023: 11.64\n2024: 11.70\n\nFrom 2019-2022, average rev...",
+          "predicted": "Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}",
+          "score": 0.0,
+          "is_correct": false,
+          "correct_count": 0,
+          "total_count": 9,
+          "feedback": "Correctness: 0/9, Contradictions: 0",
+          "llm_used": false,
+          "llm_failure": "llm_call_failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-or-v1*************************************************************7bd0. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+        },
+        {
+          "example_id": "greeks_002",
+          "dataset_type": "options",
+          "category": "Greeks Analysis",
+          "question": "You hold a portfolio of SPY options: Long 10 $450 calls (delta 0.55), Short 5 $460 calls (delta 0.35), Long 10 $440 puts (delta -0.30). Calculate the portfolio's net delta and recommend a hedge to mak...",
+          "expected": "call_delta_long: 5.5; call_delta_short: -1.75; put_delta: -3.0; net_delta: 0.75; hedge: Short 75 sha...",
+          "predicted": "Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}",
+          "score": 32.5,
+          "is_correct": false,
+          "pnl_accuracy": 60.0,
+          "greeks_accuracy": 0.0,
+          "strategy_quality": 40.0,
+          "risk_management": 30.0,
+          "feedback": "Multiple P&L calculations present. Missing Greeks analysis.",
+          "llm_used": false,
+          "sub_scores": {
+            "pnl_accuracy": 60.0,
+            "greeks_accuracy": 0.0,
+            "strategy_quality": 40.0,
+            "risk_management": 30.0
+          }
+        },
+        {
+          "example_id": "SYN_QUAL_0002",
+          "dataset_type": "synthetic",
+          "category": "Qualitative Retrieval",
+          "question": "Describe AAPL's main business and products.",
+          "expected": "Unknown",
+          "predicted": "Unknown",
+          "predicted_full": "Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}",
+          "score": 1.0,
+          "is_correct": true,
+          "feedback": "Extracted: Unknown, Expected: Unknown",
+          "llm_used": false,
+          "sub_scores": {}
+        },
+        {
+          "example_id": "scenario_0850c8d782597a5c",
+          "dataset_type": "crypto",
+          "scenario_id": "scenario_0850c8d782597a5c",
+          "scenario_name": "scenario_2",
+          "score": 41.7,
+          "baseline_score": 44.69404312178341,
+          "noisy_score": 39.050872541902706,
+          "adversarial_score": 38.20090596464076,
+          "meta_score": 44.86986081284582,
+          "grade": "F",
+          "random_seed": 3670898087,
+          "metrics": {
+            "baseline": {
+              "total_return": -5.0483849413285495e-05,
+              "max_drawdown": 0.0003364121165293909,
+              "sharpe": -0.023568193478830417,
+              "win_rate": 0.5
+            },
+            "noisy": {
+              "total_return": -0.0002980463280946424,
+              "max_drawdown": 0.0004062635516696771,
+              "sharpe": -0.1410257381342536,
+              "win_rate": 0.3333333333333333
+            },
+            "adversarial": {
+              "total_return": -0.00031492738411125176,
+              "max_drawdown": 0.0004450432945313878,
+              "sharpe": -0.2088962308203077,
+              "win_rate": 0.3333333333333333
+            },
+            "meta": {
+              "score": 44.86986081284582,
+              "average": 44.86986081284582,
+              "dispersion": 0.0,
+              "details": [
+                {
+                  "transform": "identity",
+                  "score": 44.86986081284582,
+                  "metrics": {
+                    "total_return": -1.9299125477846246e-05,
+                    "max_drawdown": 0.0003601187762373229,
+                    "sharpe": -0.009508251658409517,
+                    "win_rate": 0.5
+                  },
+                  "trade_count": 2,
+                  "decision_errors": 0
+                }
+              ]
+            }
+          },
+          "events": [
+            {
+              "index": 8,
+              "type": "flash_crash"
+            }
+          ],
+          "llm_used": false,
+          "sub_scores": {
+            "baseline": 44.69404312178341,
+            "noisy": 39.050872541902706,
+            "adversarial": 38.20090596464076,
+            "meta": 44.86986081284582
+          },
+          "is_correct": false,
+          "feedback": "Final score 41.70 (grade F)"
+        },
+        {
+          "example_id": "43dc9778-450b-4b46-b77e-b6d82b202035",
+          "dataset_type": "gdpval",
+          "occupation": "Accountants and Auditors",
+          "sector": "Professional, Scientific, and Technical Services",
+          "question": "You are a mid-level Tax Preparer at an accounting firm. You have been given the task to complete an Individual Tax return (form 1040) for the firm\u2019s clients, Bob and Lisa Smith. Bob and Lisa have prov...",
+          "predicted": "Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}",
+          "score": 0.5,
+          "is_correct": false,
+          "feedback": "Heuristic evaluation (LLM unavailable)",
+          "has_reference_files": true,
+          "llm_used": false,
+          "sub_scores": {}
+        },
+        {
+          "example_id": "17111c03-aac7-45c2-857d-c06d8223d6ad",
+          "dataset_type": "gdpval",
+          "occupation": "Administrative Services Managers",
+          "sector": "Government",
+          "question": "You are the Administrative Services Manager of a city environmental government agency. The community population has decreased steadily over the last 10 years. You are concerned about eliminating bligh...",
+          "predicted": "Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}",
+          "score": 0.5,
+          "is_correct": false,
+          "feedback": "Heuristic evaluation (LLM unavailable)",
+          "has_reference_files": true,
+          "llm_used": false,
+          "sub_scores": {}
+        },
+        {
+          "example_id": "bizfinbench_event_logic_reasoning_en_478",
+          "dataset_type": "bizfinbench",
+          "task_type": "event_logic_reasoning",
+          "language": "en",
+          "question": "\n### Role-playing\nYou are an experienced financial time attribution and root cause analysis expert. Please follow the 'Task Requirements' to summarize and organize the causes and effects of the 'Speci...",
+          "expected": "1,2,3,4",
+          "predicted": "Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}",
+          "score": 0.0,
+          "is_correct": false,
+          "feedback": "Predicted: '402', Expected: '1,2,3,4'",
+          "llm_used": false,
+          "llm_failure": "llm_call_failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-or-v1*************************************************************7bd0. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+        },
+        {
+          "example_id": "bizfinbench_financial_quantitative_computation_en_560",
+          "dataset_type": "bizfinbench",
+          "task_type": "financial_quantitative_computation",
+          "language": "en",
+          "question": "You are an expert in data calculation. Please answer the <User Question> based on the provided <Formula List> and <Related Data>, and give your reasons. You need to answer in the specified format.\n###...",
+          "expected": "-8.6697%",
+          "predicted": "Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}Error during analysis: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 64000 tokens, but can only afford 90. To increase, visit https://openrouter.ai/settings/credits and add more credits', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_306uqpfZddZxYahSiHTpJHeCTrr'}",
+          "score": 0.0,
+          "is_correct": false,
+          "feedback": "Predicted: 402.0, Expected: -8.6697, Tolerance: 0.01",
+          "llm_used": false,
+          "llm_failure": "llm_call_failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-or-v1*************************************************************7bd0. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+        }
+      ]
+    }
+  ]
+}
