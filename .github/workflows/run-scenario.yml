@@ -17,14 +17,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Verify hidden data secrets
+      - name: Check hidden data secrets
+        id: check_secrets
         run: |
-          if [ -z "${{ secrets.EVAL_DATA_REPO }}" ] || [ -z "${{ secrets.EVAL_DATA_PAT }}" ]; then
-            echo "Missing EVAL_DATA_REPO or EVAL_DATA_PAT secrets."
-            exit 1
+          if [ -n "${{ secrets.EVAL_DATA_REPO }}" ] && [ -n "${{ secrets.EVAL_DATA_PAT }}" ]; then
+            echo "has_secrets=true" >> $GITHUB_OUTPUT
+            echo "Hidden data secrets available."
+          else
+            echo "has_secrets=false" >> $GITHUB_OUTPUT
+            echo "::warning::EVAL_DATA_REPO or EVAL_DATA_PAT secrets not configured. Skipping hidden data sync."
           fi
 
       - name: Checkout hidden eval data
+        if: steps.check_secrets.outputs.has_secrets == 'true'
         uses: actions/checkout@v4
         with:
           repository: ${{ secrets.EVAL_DATA_REPO }}
@@ -32,6 +37,7 @@ jobs:
           path: eval_data_temp
 
       - name: Sync hidden crypto data
+        if: steps.check_secrets.outputs.has_secrets == 'true'
         run: |
           mkdir -p data/crypto/hidden
           rsync -a --delete eval_data_temp/crypto/eval_hidden/ data/crypto/hidden/
